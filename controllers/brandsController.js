@@ -1,4 +1,5 @@
 const express = require('express');
+const db = require('../models/index');
 const router = express.Router();
 //////////////////////////////////////////
 //CURRENT ROUTE - /brands
@@ -19,6 +20,7 @@ router.get('/new', (req, res) => {
 
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
 router.post('/', (req, res) => {
+    // console.log(req.body);
     // - GET from data from request body(brandsNew.ejs)
 
 
