@@ -20,10 +20,13 @@
         </ul>
     </nav>
 
-        <H2>LIST OF BRANDS</H2>
-        <%= brandsArray %>
-        
-        
-
+    <H2>LIST OF BRANDS</H2>
+    <ul>
+        <% for ( let i = 0; i < brandsArray.length; i++) { %>
+            <li>
+                <a href="/brands/<%= brandsArray[i]._id %>"><%= brandsArray[i].brandName %></a>
+            </li>
+      <% } %>
+    </ul>     
 </body>
 </html>
