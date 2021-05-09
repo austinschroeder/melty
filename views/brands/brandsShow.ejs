@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands Show</title>
+</head>
+<body>
+   <head>
+       <nav>
+           <h1>Show page for <%= brand.brandName %></h1>
+        </nav>
+           <ul>
+               <li>
+                <a href="/">Home</a>
+               </li>
+               <li>
+                   <a href="/brands">Brands Index</a>
+               </li>
+           </ul>
+
+   </head>
+   <main>
+       <section>
+       <h2>Brand Attributes</h2>
+       <ul>
+           <li>BrandName: <%= brand.brandName %></li>
+       </ul>
+    </section>
+   </main>
+    
+</body>
+</html>

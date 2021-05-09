@@ -23,7 +23,15 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
     res.render('brands/brandsNew')
 });  
+// Show one brand:
+router.get('/:brandId', (req, res) => {
+    // Make a query to get back a brand by its ID
+    db.Brand.findById(req.params.brandId, (error, foundBrand) => {
+        if (error) return console.log(error);
 
+    })
+    res.render('brands/brandsShow', { brand: foundBrand });
+});
 
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
 router.post('/', (req, res) => {
