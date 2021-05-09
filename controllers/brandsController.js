@@ -36,7 +36,6 @@ router.get('/:brandId', (req, res) => {
 
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
 router.post('/', (req, res) => {
-    // console.log(req.body);
     // - GET FORM data from request body(brandsNew.ejs)
     db.Brand.create(req.body, (error) => {
         if (error) return console.log(error);
@@ -46,10 +45,40 @@ router.post('/', (req, res) => {
 });
 
 
+//After "EDIT" find brand by ID and redirect to EDIT page
+router.get('/:id/edit', (req, res) => {
+    const brandId = req.params.id;
+    //FIND THE BRAND BY ID IN DB
+    db.Brand.findById(brandId, (error, foundBrand) => {
+        if (error) return console.log(error);
+        // Respond by sending to EDIT page with submitted data
+        res.render('brands/brandsEdit', { brand: foundBrand });
+    });
+});
+
+//Handle the FORM submissions
+router.put('/:id', (req, res) => {
+    const brandId = req.params.id;
+    //Find brand by ID in DB
+    db.Brand.findByIdAndUpdate(
+        brandId,
+        req.body,
+        { new: true}, //Stating that we want the updated record and not the original
+        (error, updatedBrand) => {
+            if (error) {
+                return console.log(error);
+            }
+            res.redirect(`/brands/${updatedBrand._id}`);
+        }
+    );
+});
+
+
+
+//After "DELETE" return to SHOW(brands) page
 router.delete('/:id', (req, res) => {
     const brandId = req.params.id;
-    console.log(brandId);
-
+    
     db.Brand.findByIdAndDelete(brandId, (error, deletedBrand) => {
         if (error) return console.log(error);
         res.redirect('/brands');

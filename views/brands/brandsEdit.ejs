@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND EDIT</title>
+</head>
+<body>
+    
+    <h1>BRAND EDIT</h1>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/brands/new">Create a new Brand</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form action="/brands/<%= brand._id %>?_method=PUT" method="POST">       
+            <!-- "for" is tied to "id" @2:34 -->
+            <label for="brand">Brand Name</label>
+                <input type="text" name="brandName" id="brand" value="<%= brand.brandName %>"/>
+            </label>
+            <button type="submit">Update</button>
+        </form> 
+    </main>
+</body>
+</html>
