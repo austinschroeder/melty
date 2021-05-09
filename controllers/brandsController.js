@@ -29,8 +29,8 @@ router.get('/:brandId', (req, res) => {
     db.Brand.findById(req.params.brandId, (error, foundBrand) => {
         if (error) return console.log(error);
 
+        res.render('brands/brandsShow', { brand: foundBrand });
     })
-    res.render('brands/brandsShow', { brand: foundBrand });
 });
 
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
