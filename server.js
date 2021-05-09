@@ -1,6 +1,9 @@
 const express = require('express');
-//Import brandsController
+//Import METHOD_OVERRIDE//
+const methodOverride = require('method-override');
+//Import brandsController//
 const brandsController = require('./controllers/brandsController')
+//
 const app = express();
 const PORT = 4000;
 
@@ -10,6 +13,10 @@ app.set('view engine', 'ejs');
 //MIDWARE// (allow access to request body, (parse request body))
 app.use(express.urlencoded({ extended: false}));
 
+//Method Override//
+app.use(methodOverride('_method'));
+
+////CONTROLLERS////
 //For all requests to /brands, send to brandsController
 app.use('/brands', brandsController);
 

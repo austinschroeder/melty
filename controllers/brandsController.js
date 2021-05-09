@@ -33,6 +33,7 @@ router.get('/:brandId', (req, res) => {
     })
 });
 
+
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
 router.post('/', (req, res) => {
     // console.log(req.body);
@@ -44,6 +45,16 @@ router.post('/', (req, res) => {
     });
 });
 
+
+router.delete('/:id', (req, res) => {
+    const brandId = req.params.id;
+    console.log(brandId);
+
+    db.Brand.findByIdAndDelete(brandId, (error, deletedBrand) => {
+        if (error) return console.log(error);
+        res.redirect('/brands');
+    });
+});
 
 
 //EXPORT to server.js
