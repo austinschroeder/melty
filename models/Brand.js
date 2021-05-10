@@ -15,10 +15,10 @@ const brandSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    // nuts: {
-    //     type: Boolean,
-    //     required: true
-    // },
+    nuts: {
+        type: Boolean,
+        required: true
+    },
     review: {
         type: String,
     },

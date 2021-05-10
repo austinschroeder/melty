@@ -26,6 +26,17 @@
        <h2>Brand Attributes</h2>
        <ul>
            <li>Brand Name: <%= brand.brandName %></li>
+           <li>Region: <%= brand.region %></li>
+           <li>Main Ingredient: <%= brand.ingredient %></li>
+           <!-- NUTS INDICATOR begin-->
+           <% if (brand.nuts) { %>
+           <li>This brand DOES contain nut product</li>
+           <% } else { %>
+            <li>This brand DOES NOT contain nut products</li>
+            <% } %>
+            <!-- NUTS INDICATOR end -->
+           <li>Review: <%= brand.review %></li>
+           <li>Image URL: <%= brand.imageUrl %></li>
        </ul>
     </section>
 

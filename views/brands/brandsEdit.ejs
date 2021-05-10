@@ -22,12 +22,57 @@
     </nav>
     
     <main>
-        <form action="/brands/<%= brand._id %>?_method=PUT" method="POST">       
-            <!-- "for" is tied to "id" @2:34 -->
-            <label for="brand">Brand Name</label>
-                <input type="text" name="brandName" id="brand" value="<%= brand.brandName %>"/>
-            </label>
-            <button type="submit">Update</button>
+        <form action="/brands" method="POST">
+            <div>
+                <label for="brand-name">Brand Name:
+                    <input 
+                    type="text" 
+                    name="brandName" 
+                    value="<%= brand.brandName %>"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Region:
+                    <input 
+                    type="text" 
+                    name="region" 
+                    value="<%= brand.region %>"/>
+                    
+                </label>
+            </div>
+            <div>
+                <label for="">Main Ingredient:
+                    <input 
+                    type="text" 
+                    name="ingredient"
+                    value="<%= brand.ingredient %>"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Contains Nuts:
+                    <input 
+                    type="checkbox" 
+                    name="nuts"
+                    value="<%= brand.nuts %>"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Reviews:
+                    <input 
+                    type="text" 
+                    name="review"
+                    value="<%= brand.review %>"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Image URL:
+                    <input 
+                    type="text" 
+                    name="imageUrl"
+                    value="<%= brand.imageUrl %>"/>
+                </label>
+            </div>
+            <button type="submit">Submit</button>
         </form> 
     </main>
 </body>

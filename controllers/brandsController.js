@@ -37,17 +37,17 @@ router.get('/:brandId', (req, res) => {
 //Handle POST request to add NEW BRAND (from brandsNew.ejs form)
 router.post('/', (req, res) => {
     // - GET FORM data from request body(brandsNew.ejs)
-    db.Brand.create(req.body, (error) => {
+    if (req.body.nuts === 'on') {
+            req.body.nuts = true;
+        } else {
+                req.body.nuts = false;
+            }
+    db.Brand.create(req.body, (error, newBrand) => {
         if (error) return console.log(error);
-        //Redirect back to Brands index page after Submitting
-        // if (req.body.nuts === 'on') {
-        //     req.body.nuts = true;
-        // } else {
-        //     req.body.nuts = false;
-        // }
-        console.log(brands);
-        // brand.push(req.body);
-        res.redirect('/brands');  
+                console.log(newBrand);
+                // brand.push(req.body);
+                //Redirect back to Brands index page after Submitting
+                res.redirect('/brands');  
     });
     
 });
