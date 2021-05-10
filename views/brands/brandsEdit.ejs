@@ -22,7 +22,7 @@
     </nav>
     
     <main>
-        <form action="/brands" method="POST">
+        <form action="/brands/<%= brand._id %>?_method=PUT" method="POST">  
             <div>
                 <label for="brand-name">Brand Name:
                     <input 

@@ -75,7 +75,7 @@ router.put('/:id', (req, res) => {
         (error, updatedBrand) => {
             if (error) {
                 return console.log(error);
-            }
+            } console.log(updatedBrand);
             res.redirect(`/brands/${updatedBrand._id}`);
         }
     );
