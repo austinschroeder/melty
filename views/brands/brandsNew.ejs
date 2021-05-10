@@ -19,13 +19,33 @@
             </li>
         </ul>
     </nav>
-
-        <form action="/brands" method="POST">
-            <label for="brand-name">Brand Name:</label>
-            <input type="text" name="brandName" id="brand-name">
-
+        <div>
+            <form action="/brands" method="POST">
+                <label for="brand-name">Brand Name:
+                    <input type="text" name="brandName">
+                </label>
+            </div>
+            <div>
+                <label for="">Region:
+                    <input type="text" name="region"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Main Ingredient:
+                    <input type="text" name="ingredient"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Contains Nuts:
+                    <input type="checkbox" name="nuts"/>
+                </label>
+            </div>
+            <div>
+                <label for="">Reviews:
+                    <input type="text" name="review"/>
+                </label>
+            </div>
             <button type="submit">Submit</button>
         </form>
-
 </body>
 </html>

@@ -40,8 +40,16 @@ router.post('/', (req, res) => {
     db.Brand.create(req.body, (error) => {
         if (error) return console.log(error);
         //Redirect back to Brands index page after Submitting
+        // if (req.body.nuts === 'on') {
+        //     req.body.nuts = true;
+        // } else {
+        //     req.body.nuts = false;
+        // }
+        console.log(brands);
+        // brand.push(req.body);
         res.redirect('/brands');  
     });
+    
 });
 
 
