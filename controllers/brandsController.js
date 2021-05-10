@@ -68,16 +68,26 @@ router.get('/:id/edit', (req, res) => {
 router.put('/:id', (req, res) => {
     const brandId = req.params.id;
     //Find brand by ID in DB
+    console.log('before', req.body);
+    if (req.body.nuts === 'on') {
+        req.body.nuts = true;
+    } else {
+            req.body.nuts = false;
+        }
+        console.log('after', req.body);
     db.Brand.findByIdAndUpdate(
         brandId,
         req.body,
-        { new: true}, //Stating that we want the updated record and not the original
+        { new: true},
+        
+        //Stating that we want the updated record and not the original
         (error, updatedBrand) => {
             if (error) {
                 return console.log(error);
             } console.log(updatedBrand);
             res.redirect(`/brands/${updatedBrand._id}`);
         }
+        
     );
 });
 
