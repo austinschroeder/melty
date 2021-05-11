@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 
 //MIDWARE// (allow access to request body, (parse request body))
 app.use(express.urlencoded({ extended: false}));
+//TIE IN CSS
 app.use(express.static(__dirname + '/public'));
 
 //Method Override//
@@ -21,7 +22,8 @@ app.use(methodOverride('_method'));
 //For all requests to /brands, send to brandsController
 app.use('/brands', brandsController);
 
-
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
 //-----SPLASH(home) Route-----
 app.get('/', (req, res) => {
     res.render('index.ejs');
