@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/brands-edit.css">
     <title>BRAND EDIT</title>
 </head>
 <body>
     <nav class="nav-container">
         
-                <a href="/brands">Brands</a>
-            
-                <a href="/testing">Testing</a>
+                <a class="nav-buttons" href="/brands">Brands</a>
             
     </nav>
-    <h1>BRAND EDIT</h1>
+    <h1>Brand Edit</h1>
     
         
     <main>
@@ -53,8 +55,9 @@
                 </label>
             </div>
             <div>
-                <label for="">Reviews:
-                    <input 
+                <label class="review-label" for="">Reviews:
+                    <input
+                    class="review-input" 
                     type="text" 
                     name="review"
                     value="<%= brand.review %>"/>

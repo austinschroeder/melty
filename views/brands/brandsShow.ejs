@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="/styles/brand-show.css">
     <title>Brands Show</title>
 </head>
@@ -14,31 +17,28 @@
 
    </head>
    <main>
-    
         <nav class="nav-container">
-           
                     <a href="/brands">Brands</a>
-                
-                    <a href="/testing">Testing</a>
-               
         </nav>
-       <section>
-       <h2>Brand Attributes</h2>
-       <ul>
-           <li>Brand Name: <%= brand.brandName %></li>
-           <li>Region: <%= brand.region %></li>
-           <li>Main Ingredient: <%= brand.ingredient %></li>
+
+        <h1>Brand Attributes</h1>
+        <section>
+           <p class="label">Brand Name: <%= brand.brandName %></p>
+           <p class="label">Region: <%= brand.region %></p>
+           <p class="label">Main Ingredient: <%= brand.ingredient %></p>
            <!-- NUTS INDICATOR begin-->
            <% if (brand.nuts) { %>
-           <li>This brand DOES contain nut product</li>
+           <p class="label">This brand DOES contain nut product</p>
            <% } else { %>
-            <li>This brand DOES NOT contain nut products</li>
+            <p class="label">This brand DOES NOT contain nut products</p>
             <% } %>
             <!-- NUTS INDICATOR end -->
-           <li>Review: <%= brand.review %></li>
-           <li>Image URL: <%= brand.imageUrl %></li>
-       </ul>
-    </section>
+           <p class="label">Review: <%= brand.review %></p>
+           <p class="label">Submitted Image:</p>
+           <img class="index-image" src="<%= brand.imageUrl %>" alt="">
+            
+         </section>
+  
 
     <section>
         <!-- DELETE Button -->
