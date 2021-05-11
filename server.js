@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 
 //MIDWARE// (allow access to request body, (parse request body))
 app.use(express.urlencoded({ extended: false}));
+app.use(express.static(__dirname + '/public'));
 
 //Method Override//
 app.use(methodOverride('_method'));
