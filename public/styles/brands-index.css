@@ -1,6 +1,14 @@
+* { border: 1px solid red; }
+
 body {
     background-color: #f5f5f5;
     background-image: url(https://www.teahub.io/photos/full/38-387924_black-and-white-wood-paneling.jpg)
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .image-placeholder {
