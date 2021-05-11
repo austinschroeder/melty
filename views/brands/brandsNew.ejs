@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/brands-new.css">
     <title>Add a BRAND</title>
 </head>
 <body>
-    <nav class="nav-container">
-        <a href="/brands">Brands</a>
+<nav class="nav-container">
+    <a class="nav-buttons" href="/">Home</a>
+    <a class="nav-buttons" href="/brands">Brands</a>
     
-        <a href="/">Home</a>
+    
+</nav>
 
-    </nav>
+    <h1>Add a brand</h1>
 
-    <h1>Add a BRAND</h1>
-
-   
+     
         <form action="/brands" method="POST">
             <div>
                 <label for="brand-name">Brand Name:
@@ -36,12 +38,12 @@
             </div>
             <div>
                 <label for="">Contains Nuts:
-                    <input type="checkbox" name="nuts"/>
+                    <input class="checkbox" type="checkbox" name="nuts"/>
                 </label>
             </div>
             <div>
-                <label for="">Reviews:
-                    <input type="text" name="review"/>
+                <label class="review-label" for="">Review:
+                    <input class="review-input" type="text" name="review"/>
                 </label>
             </div>
             <div>
@@ -50,6 +52,7 @@
                 </label>
             </div>
             <button type="submit">Submit</button>
-        </form>
+        
+    </div>
 </body>
 </html>

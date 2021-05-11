@@ -1,1 +1,58 @@
 * { border: 1px solid red; }
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
+
+.nav-buttons {
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+form {
+    margin-left: 33%;
+    margin-right:33%;
+    width: 33%;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .checkbox {
+    align-self: flex-start;
+} */
+
+div {
+    margin: 10px 10px;
+}
+
+input{
+    width: 300px;
+}
+
+/* goal for review label: to display not centered, but at top, aligning with top of review box */
+/* .review-label {
+    align-self: flex-start;
+} */
+
+.review-input {
+    height: 200px;
+}
+
+button {
+    margin-left: 33%;
+    margin-right:33%;
+    width: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
