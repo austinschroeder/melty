@@ -14,7 +14,9 @@ body {
 .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: left;   
+    justify-content: left;
+    background: rgb(245,245,246);
+    background: linear-gradient(83deg, rgba(245,245,246,1) 0%, rgba(221,215,189,0.9920634920634921) 100%);   
 }
 
 .nav-buttons {
