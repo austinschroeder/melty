@@ -46,9 +46,11 @@
                     value="<%= brand.ingredient %>"/>
                 </label>
             </div>
+           
             <div>
                 <label for="">Contains Nuts:
-                    <input 
+                    <input
+                    id="toggle" 
                     type="checkbox" 
                     name="nuts"
                    <%= brand.nuts && 'checked'%>/>
@@ -56,11 +58,9 @@
             </div>
             <div>
                 <label class="review-label" for="">Reviews:
-                    <input
-                    class="review-input" 
-                    type="text" 
-                    name="review"
-                    value="<%= brand.review %>"/>
+                    <textarea class="review-input" name="review" rows="10" cols="40">
+                        <%= brand.review %>
+                    </textarea>
                 </label>
             </div>
             <div>

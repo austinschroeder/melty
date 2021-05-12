@@ -9,12 +9,35 @@ body {
 .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    
 }
 
-h1 {
+.nav-buttons {
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+a { 
+    color: rgba(43,43,43,1); 
+    text-decoration: none; 
+    padding: 10px; 
+    border-bottom: 2px solid rgba(43,43,43,1); 
+}
+
+a:hover { 
+    background: rgba(43,43,43,1); 
+    color: rgba(255,255,255,1); 
+}
+
+h1, h2 {
     text-align: center;
     font-family: 'Lobster', cursive;
+}
+
+h2 {
+
 }
 
 section {
@@ -25,6 +48,7 @@ section {
 
 .label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-wrap: break-word;
 }
 
 

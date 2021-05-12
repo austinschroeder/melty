@@ -11,17 +11,12 @@
     <title>Brands Show</title>
 </head>
 <body>
-   <head>
-       
-           <h1>Show page for <%= brand.brandName %></h1>
-
-   </head>
-   <main>
+    <main>
         <nav class="nav-container">
-                    <a href="/brands">Brands</a>
+                    <a class="nav-buttons" href="/brands">Brands</a>
         </nav>
-
-        <h1>Brand Attributes</h1>
+       <h1><%= brand.brandName %></h1>
+         <h2>Thanks for submitting!</h2>
         <section>
            <p class="label">Brand Name: <%= brand.brandName %></p>
            <p class="label">Region: <%= brand.region %></p>
@@ -37,21 +32,21 @@
            <p class="label">Submitted Image:</p>
            <img class="index-image" src="<%= brand.imageUrl %>" alt="">
             
+           <!-- DELETE Button -->
+           <form action="/brands/<%= brand._id %>?_method=DELETE" method="POST">
+               <button type="submit">
+                   Delete
+               </button>
+                <!-- EDIT Button -->
+                <button>
+                    <a href="/brands/<%= brand._id %>/edit">Edit</a>
+                </button>
+           </form>
          </section>
   
 
-    <section>
-        <!-- DELETE Button -->
-        <form action="/brands/<%= brand._id %>?_method=DELETE" method="POST">
-            <button type="submit">
-                Delete
-            </button>
-             <!-- EDIT Button -->
-             <button>
-                 <a href="/brands/<%= brand._id %>/edit">Edit</a>
-             </button>
-        </form>
-    </section>
+    
+    
    </main>
     
 </body>

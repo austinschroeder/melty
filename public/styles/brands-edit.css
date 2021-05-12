@@ -44,9 +44,28 @@ input{
 /* .review-label {
     align-self: flex-start;
 } */
+/* ////////////////////////////////////////// */
+
+
+a { 
+    color: rgba(43,43,43,1); 
+    text-decoration: none; 
+    padding: 10px; 
+    border-bottom: 2px solid rgba(43,43,43,1); 
+}
+
+a:hover { 
+    background: rgba(43,43,43,1); 
+    color: rgba(255,255,255,1); 
+}
+
+
+/* ////////////////////////////////////////// */
+
 
 .review-input {
     height: 200px;
+    overflow-wrap: break-word;
 }
 
 button {

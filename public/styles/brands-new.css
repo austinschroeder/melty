@@ -13,6 +13,18 @@
     text-decoration: none;
 }
 
+a { 
+    color: rgba(43,43,43,1); 
+    text-decoration: none; 
+    padding: 10px; 
+    border-bottom: 2px solid rgba(43,43,43,1); 
+}
+
+a:hover { 
+    background: rgba(43,43,43,1); 
+    color: rgba(255,255,255,1); 
+}
+
 h1 {
     text-align: center;
     font-family: 'Lobster', cursive;
