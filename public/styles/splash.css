@@ -1,14 +1,91 @@
-body {
-    background-color: rgb(208, 228, 221);
+/* * { border: 1px solid red; } */
+
+div {
+    display: block;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
+h1 {
+    
+width: 300px;
+    height: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 200px;
+    text-decoration: none;
+    animation: fadeIn ease 10s;   
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+h2.is {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 200px;
+    text-decoration: none;
+
+}
+
+h2.cheese {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 200px;
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+    color: black;
+}
+a:link{
+    text-decoration: none!important;
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black;
+}
+
+body {
+    background-color:  #E6E6E6;
+}
 /* we need a header image
 welcome message
 we need a large image in the center of the page 
-we need to get rid of the UL dots
-we need font
+
+
 we have link to view product
 we need a footer*/
 h1 {
-    
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
 }
