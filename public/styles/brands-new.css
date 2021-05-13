@@ -60,6 +60,13 @@ label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.checkbox {
+  position:absolute;
+  left: 32%;
+}
+
+
+
 /* .checkbox {
     align-self: flex-start;
 } */

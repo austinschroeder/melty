@@ -22,8 +22,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background: rgb(245,245,246);
-    background: linear-gradient(83deg, rgba(245,245,246,1) 0%, rgba(221,215,189,0.9920634920634921) 100%);   
+    background:rgba(255,255,255,0.6);
+    /* background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(213,214,215,1) 100%);   */
 }
 
 .nav-buttons {
@@ -72,9 +72,9 @@ h1 {
     margin-left: 500px;
     margin-right: 50px;
     text-align: left;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode'
+    font-family: 'Roboto', sans-serif;
     
 }
 
