@@ -49,10 +49,10 @@ form {
 label {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
 }
-
-/* .checkbox {
-    align-self: flex-start;
-} */
+.checkbox {
+    position:absolute;
+    left: 32%;
+  }
 
 div {
     margin: 10px 10px;
@@ -77,12 +77,14 @@ input{
 .review-input {
     height: 200px;
     overflow-wrap: break-word;
+    /* text-align: justify;
+    text-align-last: left; */
 }
 
 button {
     margin-left: 33%;
     margin-right:33%;
     width: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',;
     
 }
