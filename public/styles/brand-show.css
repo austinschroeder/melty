@@ -58,6 +58,11 @@ h1, h2 {
   width: 500px;
 }
 
+.anchor-link {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
     margin-left: 33%;
     margin-right:33%;
