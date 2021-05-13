@@ -3,6 +3,7 @@
 
 body {
     /* background-color: rebeccapurple; */
+    margin: 20px;
 }
 
 
@@ -39,10 +40,11 @@ h1, h2 {
 .field-background {
   display: flex;
   flex-direction: column;
+  /* bottom: 30px; */
   background-color: rgba(210, 214, 218, 0.63);
   position: absolute;
   border-radius: 5px;
-  height: 600px;
+  height: 800px;
   width: 500px;
 }
 

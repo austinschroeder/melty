@@ -84,6 +84,10 @@ h2 {
     text-shadow: 2px 2px #ffffff;
 }
 
+.yellow {
+    background-color: rgba(218,165,32, 0.9);
+    animation: fadeIn ease 10s;
+}
 
 @keyframes fadeIn {
     0% {
@@ -113,9 +117,6 @@ a:visited {
     background-color: goldenrod;
 } */
 
-.yellow {
-    background-color: rgba(218,165,32, 0.9);
-}
 
 h1 {
     font-family: 'Lobster', cursive;
