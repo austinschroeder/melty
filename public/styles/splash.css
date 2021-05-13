@@ -1,6 +1,14 @@
 /* * { border: 1px solid red; } */
 
-div {
+body {
+    margin-top: 100px;
+    background-color:  #E6E6E6;
+    background-image: url(https://zipclinic.com/wp-content/uploads/2019/12/plant.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* div {
     display: block;
     background-color: white;
     width: auto;
@@ -8,36 +16,65 @@ div {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 0;
+} */
+
+.header {
+    background-color: white;
+    height: 110px;
+   
 }
 
-h1 {
-    
+h1 { 
 width: 300px;
     height: 75px;
     padding: 0;
     margin: 0;
 }
 
-h4 {
+h2 {
     padding: 0;
     margin: 0;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
 }
 
 h1,
-h4 {
+h2 {
     margin-left: 20px;
 }
 
-h2 {
+/* .container {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+} */
+
+.veggies {
+    /* position:absolute; */
+    content:url(https://zipclinic.com/wp-content/uploads/2019/12/plant.jpg);
+    left: 50%;
+    right: 50%;
+    width: 100%;
+    /* width: 500px;
+    height: 500px; */
+    z-index: 1;
+
+}
+
+.message {
+    /* position: absolute; */
+    z-index: 2;
     text-align: center;
     padding: 0;
     margin: 0;
     font-family: 'Six Caps', sans-serif;
     font-size: 200px;
-    text-decoration: none;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     animation: fadeIn ease 10s;   
 }
 @keyframes fadeIn {
@@ -48,24 +85,8 @@ h2 {
       opacity:1;
     }
   }
-h2.is {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-family: 'Six Caps', sans-serif;
-    font-size: 200px;
-    text-decoration: none;
 
-}
 
-h2.cheese {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-family: 'Six Caps', sans-serif;
-    font-size: 200px;
-    text-decoration: none;
-}
 a:hover { 
     text-decoration: none;
     color: black;
@@ -80,16 +101,7 @@ a:visited {
     color: black;
 }
 
-body {
-    background-color:  #E6E6E6;
-}
-/* we need a header image
-welcome message
-we need a large image in the center of the page 
 
-
-we have link to view product
-we need a footer*/
 h1 {
     font-family: 'Lobster', cursive;
     font-size: 60px;
@@ -109,3 +121,4 @@ footer {
     width: 30px;
     padding: 10px;
 }
+

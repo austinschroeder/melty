@@ -30,10 +30,10 @@
                 <% } %>
                 <!-- NUTS INDICATOR end -->
                 <p class="label">Review: <%= brand.review %></p>
-                <p class="label">Submitted Image:</p>
-                <img class="index-image" src="<%= brand.imageUrl %>" alt="">
+                    <p class="label">Submitted Image:</p>
+                    <img class="index-image" src="<%= brand.imageUrl %>" alt="">
                         
-                <!-- DELETE Button -->
+                    <!-- DELETE Button -->
                 <form class="button-container " action="/brands/<%= brand._id %>?_method=DELETE" method="POST">
                     <button class="delete-edit big-button" type="submit">
                     Delete
