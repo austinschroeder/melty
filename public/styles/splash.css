@@ -80,6 +80,10 @@ h2 {
     animation: fadeIn ease 10s;   
 }
 
+.message:hover {
+    text-shadow: 2px 2px #ffffff;
+}
+
 
 @keyframes fadeIn {
     0% {
@@ -105,8 +109,12 @@ a:visited {
     color: black;
 }
 
-.cheese {
+/* .cheese {
     background-color: goldenrod;
+} */
+
+.yellow {
+    background-color: rgba(218,165,32, 0.9);
 }
 
 h1 {
