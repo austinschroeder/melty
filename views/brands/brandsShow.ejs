@@ -29,7 +29,8 @@
                 <p class="label">This brand DOES NOT contain nut products</p>
                 <% } %>
                 <!-- NUTS INDICATOR end -->
-                <textarea class="label" rows="10" cols="40">Review: <%= brand.review %></textarea>
+                <p class="label review-label">Review:</p>
+                <textarea class="label" rows="10" cols="40"><%= brand.review %></textarea>
                     <p class="label">Submitted Image:</p>
                     <img class="index-image" src="<%= brand.imageUrl %>" alt="">
                         
