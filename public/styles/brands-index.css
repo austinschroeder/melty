@@ -3,7 +3,11 @@
 body {
     padding: 10px;
     background-color: #f5f5f5;
-    /* background-image: url(https://www.teahub.io/photos/full/38-387924_black-and-white-wood-paneling.jpg) */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(https://data.1freewallpapers.com/download/branch-leaves-minimalism-green-plant.jpg)
 }
 
 /* .nav-container {
@@ -13,6 +17,8 @@ body {
 } */
 
 .nav-container {
+    /* position: fixed; */
+    /* width: 100%;  */
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -39,6 +45,8 @@ body {
 }
 
 h1 {
+    color: #0f350c;
+    text-shadow: 2px 2px #ffffff;
     text-align: center;
     text-decoration: underline;
     font-family: 'Lobster', cursive;
@@ -46,7 +54,18 @@ h1 {
     margin-bottom: 0;
 }
 
+/* .statement-background {
+    background-color: hotpink;
+    position: absolute;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 50px;
+} */
+
 .statement {
+    border-radius: 10px;
+    background-color: rgba(206, 208, 208,0.7);
     position: absolute;
     width: 40%;
     margin-top: 50px;
@@ -75,7 +94,7 @@ h1 {
 }
 
 .index-image:hover { 
-    border: 5px solid #696140; 
+    border: 5px solid #19412b; 
   } 
 
 .brand-label {
