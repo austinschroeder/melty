@@ -17,40 +17,41 @@
 
     <h1>Add a brand</h1>
 
-     
-        <form action="/brands" method="POST">
-            <div>
-                <label for="brand-name">Brand Name:
-                    <input type="text" name="brandName">
-                </label>
-            </div>
-            <div>
-                <label for="">Region:
-                    <input type="text" name="region"/>
-                </label>
-            </div>
-            <div>
-                <label for="">Main Ingredient:
-                    <input type="text" name="ingredient"/>
-                </label>
-            </div>
-            <div>
-                <label for="">Contains Nuts:
-                    <input class="checkbox" type="checkbox" name="nuts"/>
-                </label>
-            </div>
-            <div>
-                <label class="review-label" for="">Review:
-                    <input class="review-input" type="text" name="review"/>
-                </label>
-            </div>
-            <div>
-                <label for="">Image URL:
-                    <input type="text" name="imageUrl"/>
-                </label>
-            </div>
-            <button class="big-button" type="submit">Submit</button>
-        
+        <!-- <div class="field-background"> -->
+            <form class="field-background" action="/brands" method="POST">
+                <div>
+                    <label for="brand-name">Brand Name:
+                        <input type="text" name="brandName">
+                    </label>
+                </div>
+                <div>
+                    <label for="">Region:
+                        <input type="text" name="region"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="">Main Ingredient:
+                        <input type="text" name="ingredient"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="">Contains Nuts:
+                        <input class="checkbox" type="checkbox" name="nuts"/>
+                    </label>
+                </div>
+                <div>
+                    <label class="review-label" for="">Review:
+                        <input class="review-input" type="text" name="review"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="">Image URL:
+                        <input type="text" name="imageUrl"/>
+                    </label>
+                </div>
+                <button class="big-button" type="submit">Submit</button>
+            </form>
+        <!-- </div> -->
     </div>
 </body>
 </html>

@@ -1,5 +1,15 @@
 /* * { border: 1px solid red; } */
 
+body {
+    padding: 10px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(https://data.1freewallpapers.com/download/branch-leaves-minimalism-green-plant.jpg)
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -37,7 +47,7 @@ form {
 }
 
 label {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
 }
 
 /* .checkbox {

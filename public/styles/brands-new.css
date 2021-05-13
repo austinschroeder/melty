@@ -1,5 +1,15 @@
 /* * { border: 1px solid red; } */
 
+body {
+    padding: 10px;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(https://data.1freewallpapers.com/download/branch-leaves-minimalism-green-plant.jpg)
+}
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -29,6 +39,16 @@ h1 {
     text-align: center;
     font-family: 'Lobster', cursive;
 }
+
+/* .field-background {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(210, 214, 218, 0.63);
+    position: absolute;
+    border-radius: 5px;
+    height: 800px;
+    width: 500px;
+  } */
 
 form {
     margin-left: 33%;
@@ -73,11 +93,11 @@ button {
 
 :root {
     --backgroundColor: rgba(246, 241, 209);
-    --colorShadeA: rgb(116, 99, 8);
-    --colorShadeB: rgb(167, 157, 23);
-    --colorShadeC: rgb(206, 204, 86);
-    --colorShadeD: rgb(229, 232, 187);
-    --colorShadeE: rgb(206, 211, 133);
+    --colorShadeA: rgb(26,72,29);
+    --colorShadeB: rgb(53, 118, 57);
+    --colorShadeC: rgb(165, 205, 168);
+    --colorShadeD: rgb(117, 184, 122);
+    --colorShadeE: rgb(155, 171, 156);
   }
   
   button {
