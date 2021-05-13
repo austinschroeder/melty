@@ -1,11 +1,12 @@
 /* * { border: 1px solid red; } */
 
 body {
-    margin-top: 100px;
+    margin-top: 40px;
     background-color:  #E6E6E6;
     background-image: url(https://zipclinic.com/wp-content/uploads/2019/12/plant.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    /* opacity: 0.5; */
 }
 
 /* div {
@@ -19,10 +20,10 @@ body {
 } */
 
 .header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 110px;
-   
 }
+
 
 h1 { 
 width: 300px;
@@ -42,6 +43,7 @@ h2 {
 h1,
 h2 {
     margin-left: 20px;
+    color: rgba(0, 0, 0, 1);
 }
 
 /* .container {
@@ -77,14 +79,16 @@ h2 {
     transform: translate(-50%, -50%); */
     animation: fadeIn ease 10s;   
 }
+
+
 @keyframes fadeIn {
     0% {
-      opacity:0;
+        opacity:0;
     }
     100% {
-      opacity:1;
+        opacity:1;
     }
-  }
+}
 
 
 a:hover { 
@@ -101,6 +105,9 @@ a:visited {
     color: black;
 }
 
+.cheese {
+    background-color: goldenrod;
+}
 
 h1 {
     font-family: 'Lobster', cursive;

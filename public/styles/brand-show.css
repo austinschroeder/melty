@@ -69,8 +69,8 @@ section {
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .delete-edit {
@@ -78,8 +78,11 @@ section {
 }
 
 .edit-button {
-    text-decoration: none;
-    color: inherit;
+  /* position: absolute; */
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 /* //////////////////////////////////////////// */
