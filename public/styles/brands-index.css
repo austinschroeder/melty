@@ -40,9 +40,23 @@ body {
 
 h1 {
     text-align: center;
+    text-decoration: underline;
     font-family: 'Lobster', cursive;
     font-size: 60px;
     margin-bottom: 0;
+}
+
+.statement {
+    position: absolute;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 50px;
+    text-align: left;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode'
+    
 }
 
 .image-placeholder {
