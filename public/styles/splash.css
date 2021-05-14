@@ -66,6 +66,12 @@ h2 {
 
 }
 
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .message {
     /* position: absolute; */
     z-index: 2;
@@ -87,6 +93,8 @@ h2 {
 .yellow {
     background-color: rgba(218,165,32, 0.9);
     animation: fadeIn ease 10s;
+    width: 1285px;
+    max-width: 1285px;
 }
 
 @keyframes fadeIn {

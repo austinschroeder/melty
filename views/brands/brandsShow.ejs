@@ -17,7 +17,8 @@
         </nav>
         <h1><%= brand.brandName %></h1>
         <h2>Thanks for submitting!</h2>
-        <section>
+        
+        <section class="section-container">
             <div class="field-background">
                 <p class="label">Brand Name: <%= brand.brandName %></p>
                 <p class="label">Region: <%= brand.region %></p>
@@ -35,15 +36,19 @@
                     <img class="index-image" src="<%= brand.imageUrl %>" alt="">
                         
                     <!-- DELETE Button -->
-                <form class="button-container " action="/brands/<%= brand._id %>?_method=DELETE" method="POST">
+                <div class="button-container">
+                <form action="/brands/<%= brand._id %>?_method=DELETE" method="POST">
                     <button class="delete-edit big-button" type="submit">
                     Delete
                     </button>
-                <!-- EDIT Button -->
-                    <button class="delete-edit big-button">
-                        <a class="edit-button" href="/brands/<%= brand._id %>/edit">Edit</a>
-                    </button>
                 </form>
+                    <!-- EDIT Button -->
+                        <a class="edit-button" href="/brands/<%= brand._id %>/edit">
+                            <button class="delete-edit big-button">
+                            Edit
+                            </button>
+                        </a>
+                    </div>
             </div>
         </section>
 
