@@ -64,16 +64,6 @@ textarea {
   vertical-align: top;
 }
 
-/* .checkbox {
-  position:absolute;
-  left: 32%;
-} */
-
-
-
-/* .checkbox {
-    align-self: flex-start;
-} */
 
 div {
     margin: 10px 10px;
@@ -83,10 +73,6 @@ input{
     width: 300px;
 }
 
-/* goal for review label: to display not centered, but at top, aligning with top of review box */
-/* .review-label {
-    align-self: flex-start;
-} */
 
 .review-input {
     height: 200px;
