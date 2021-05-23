@@ -5,7 +5,7 @@
 const mongoose = require('mongoose');
 const brandModel = require('./Brand');
 
-const connectionString = 'mongodb://localhost:27017/melty';
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/melty';
 
 //Firing off connection to MongoDB and passing in deprication warning flags
 mongoose.connect(connectionString, {

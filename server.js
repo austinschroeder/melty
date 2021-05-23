@@ -5,7 +5,7 @@ const methodOverride = require('method-override');
 const brandsController = require('./controllers/brandsController')
 //
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 //CONFIG//
 app.set('view engine', 'ejs');
