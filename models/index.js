@@ -15,17 +15,17 @@ mongoose.connect(connectionString, {
   useFindAndModify: false
 });
 
-//Let us know we're connected//
+//Inform connected//
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected to ${connectionString}`);
 });
 
-//Let us know we're disconnected//
+//Inform disconnected//
 mongoose.connection.on('disconnected', () => {
   console.log('Mongoose disconnected');
 });
 
-//Let us know theres an error//
+//Inform error//
 mongoose.connection.on('error', (err) => {
   console.log('Mongoose error: ', err);
 });

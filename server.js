@@ -37,12 +37,7 @@ app.get('/', (req, res) => {
 // });
 
 
-
-
 // mongodb+srv://austin:1234@cluster0.3dh5o.mongodb.net/melty-plant-based?retryWrites=true&w=majority
-
-
-
 
 
 
